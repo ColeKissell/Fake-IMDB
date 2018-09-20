@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000"> -->
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico"> -->
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <header>
+      <!-- search bar  group all search bar tools together-->
+      <section id="top">
+        <!-- the search bar is a contained in a form -->
+        <form>
+           
+          <label>Search</label>
+          <input type="text">
+          <button type="submit">go</button>
+        </form>
+      </section>
+      <!-- menu items best contained with in a nav section-->
+        <nav>
+          <a href="home">home</a>
+          <a href="movies">movies</a>
+          <a href="TV">TV</a>
+          <a href="showtimes">Showtimes</a>
+        </nav>
+    </header>
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <!-- this is the first section of the page that would change between movies. a section tag is good for when you know there will be other groupings within a part of the page -->
+    <section id="title">
+        <h1>Human Identity Agent</h1>
+        <img src="https://imgc.allpostersimages.com/img/print/posters/harry-potter-philosophers-stone-movie-poster_a-G-9843009-0.jpg">
+        <!-- under the title there is a menu bar for quick navigation around the page. menues are best contained in nav tags -->
+        <nav>
+          <a href=#people>full cast and crew</a>
+          <a href=#gallery>gallery</a>
+          <a href=#details>details</a>
+          <a href=#trivia>trivia</a>
+          <a href=#FAQ>FAQ</a>
+          </nav>
+          <p>insert description of the movie</p>
+    </section>
+    <!-- a portion of the page containing videos and movies. formating media is different than formating text so it should be in its won section -->
+    <section id="gallery">
+      <h2>videos</h2>
+      <!-- this is a list of videos it should be sepparated from the rest of the section -->
+      <div>
+        <ul>
+          <li>movie 1</li>
+        </ul>
+
+      </div>
+      <h2>photos</h2>
+      <!-- the photos should be sepparated from the videos -->
+      <div>
+          <img src=http://lorempixel.com/640/480/food>
+          <img src=http://lorempixel.com/640/480/nightlife>
+        </div>
+    </section>
+    <!-- this section cotains a list of people that could list the person with a picture and a link to the person's page. 
+    Formating is different from just text so a section tag is used.-->
+  <section>
+    <h2 id="people">Cast</h2>
+    <ul>
+      <li>Shanelle Deckow</li>
+      <li>Rene Rippin</li>
+    </ul>
+
+  </section>
+  <!-- this part of the page is mostly text. the article tag is best suited for this section -->
+    <article>
+      <h2>storyline</h2>
+      <p>Officiis repellendus magni dolorem sunt reprehenderit fugiat qui asperiores. Repellat voluptas expedita ea sit voluptas provident repudiandae deleniti voluptatibus. Deserunt earum qui iusto est animi. Molestiae sint magni repudiandae sit. Sapiente sed quia quas molestias culpa reprehenderit maiores. Quae magni sit praesentium.</p>
+    </article>
+    <!-- new portion of the article -->
+    <div>
+        <h3>plot key words</h3>
+        <p>nihil voluptas illum</p>
+    </div>
+    <!-- new portion of the article -->
+    <div>
+      <h3>taglines</h3>
+      <p>Nostrum eos totam fuga ut sint quis voluptatem mollitia.</p>
+    </div>
+    <!-- another new portion of the article tag -->
+    <div>
+      <h3>genres:</h3>
+      <p>comedy</p>
+      <p>magic</p>
+      <p>fantasy</p>
+    </div>
+    <!-- another division of the article tag -->
+    <div>
+      <h3>motion picture rating</h3>
+      <p>Iure dignissimos vero est qui eos rerum facere. Necessitatibus provident quis explicabo et non recusandae molestiae. Alias magnam porro aut totam ea aliquam et dolores. In est nesciunt est expedita eum a et nulla. Praesentium odit et minima dignissimos excepturi non rerum. Provident et libero.</p>
+    </div>
+    <hr/>
+    <!-- the details section is mostly text and/or links the article tag is a good way to denote that something is mostly text -->
+    <article id="details">
+      <h2>Details</h2>
+      <h3>official sites</h3>
+      <a href="https://jarod.biz">official site</a>
+      <h3>country</h3>
+      <p>country of origin</p>
+      <h3>language</h3>
+      <p>English</p>
+      <h3>Release Date:</h3>
+      <p>Sat Aug 18 2018 01:18:18 GMT-0600 (MDT)</p>
+      <h3>filming location</h3>
+      <p>Reynoldsfort</p>
+      <hr/>
+      <div>
+        <h2>Company Credits</h2>
+        <p>dolorem suscipit dolores</p>
+      </div>
+      <hr/>
+    </article>
+    <!-- the trivia section has mostly text info. the content of this section is distinct enough from the rest of the seection to be worth separating from the details of the movie. -->
+    <article id="trivia">
+      <h2>Did you know?</h2>
+      <section>
+        <h3>Trivia</h3>
+        <p>Sequi qui voluptatum dignissimos unde. Repellendus esse voluptas voluptas maiores et est quidem maiores. Illo est nulla autem.</p>
+      </section>
+      <section>
+        <h3>Quotes</h3>
+        <p>Et et error quisquam. Dolores quaerat aliquam veniam iusto sed sit non. Enim veniam ut voluptatem quibusdam modi nulla nihil. Sit ratione quam error sint sit ea rerum. Architecto ut laborum sequi est.</p>
+      </section>
+    </article>
+    <hr/>
+    <article id="FAQ">
+      <h2>FAQ</h2>
+      <section>
+        <h4>Here is a question?</h4>
+        <p>Libero recusandae tempore nobis consequatur recusandae sed. Nisi sit blanditiis deleniti voluptatem labore. Aut fugit sit ut. Consequatur et vel modi quas.</p>
+      </section>
+    </article>
+    <hr/>
+    <!-- the contribute section could link to or contain a form this is easier to detail when it is separate from the rest of the page. -->
+    <section id="contribute">
+      <h3>Contribute to the page</h3>
+        <button type="submit">edit page</button>
+    </section>
+    <hr/>
+  </body>
+  <!-- this section contains info that doesn't change between pages but is better displayed at the bottom -->
+  <footer>
+    <section>
+      <h2>Recently Viewed</h2>
+      <img src=http://lorempixel.com/640/480/cats>
+
+    </section>
+    <!-- this section contains a collection of links that navigate both to parts of the page and outside sources -->
+    <nav>
+      <h2>Site Map</h2>
+    </nav>
+    <!-- this contains links to social media sites -->
+    <section>
+      <h2>Social media</h2>
+    </section>
+    <!-- contains a list of links to downloads of apps -->
+    <section>
+      <h2>Downloads</h2>
+    </section>
+  </footer>
+</html>
